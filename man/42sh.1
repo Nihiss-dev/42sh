@@ -1,0 +1,53 @@
+.\" 42sh manual
+.\" Contact comte_a ovejer_n roulli_a feldma_a chardo_j for any prupose or problem
+.TH man 1 "Coded by: Les petits pédestres" "2.0" "42sh man page"
+.SH NAME
+42sh \- Epitech 42sh shell
+.SH SYNOPSIS
+.BI "./42sh [no_option]"
+.SH DESCRIPTION
+42sh is a basic shell. This is a project of the Epitech cursus also it is not fully functional as bash for example.
+.SH OPTIONS
+There is currently no option for the 42sh. But instaded there is many build like: cd exit yoda and more... For more information and an exsostive list please refere to the built-in section.
+.SH BUILT-IN
+.IP cd
+use to move in the path or use
+.BI "cd -"
+to go back of your current location.
+.IP echo
+if you use
+.BI "echo $VAR"
+it will display the
+.BI $VAR
+witch is in the env or if you just give a string to echo it will put the string on the standard output.
+.IP setenv
+.BI "setenv $VAR"
+"string" add the var
+.BI "$VAR"
+in the environment with the specified string.
+.IP unsetenv
+.BI "unsetenv $VAR"
+erase the
+.BI $VAR
+of the actual environment.
+.IP yoda
+Just try it !
+.SH CONF FILE
+The file .myshrc is a file where you can add alias and export.
+.IP alias
+The synthax to use alias in the .myshrc file is like: 
+.BI "alias alias_name=your command"
+For example, if you want that when you type
+.BI "la"
+the 42sh execute
+.BI "ls -la"
+you have to use the right synthax in the .myshrc
+.BI "alias la=ls -la".
+.IP export
+The
+.BI "export"
+command in the .myshrc can be used to add some variables in the env of the 42sh. As alias, there is a special synthax to use it. Here is an example.
+.BI "export EDITOR=emacs"
+will set emacs as the default editor in your env.
+.SH BUGS
+We know some bugs but we can't unveil them ! :p

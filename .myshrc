@@ -1,0 +1,24 @@
+# .myshrc for 42sh
+
+# Usage export :
+# export VAR_NAME=VAR_VALUE
+
+# Usage alias :
+# alias ALIAS_NAME=ALIAS_VALUE
+
+export PATH=/usr/bin:/bin
+
+export EDITOR=emacs
+export HISTSIZE=1000
+export PAGER=more
+export SAVEHIST=1000
+export WATCH=all
+
+alias grep=grep --color
+alias ll=ls -l
+alias la=ls -la
+alias c=clear
+alias ne=emacs -nw
+alias clean=rm *~
+alias ls=ls --color
+alias lock=xlock
